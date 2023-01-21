@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Weekly Budget</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <!-- Start context menu -->
+        <div id="context-menu">
+            <div class="item" id="context-menu-edit">
+                <i class="fa fa-cut"></i> ویرایش
+            </div>
+
+            <div class="item" id="context-menu-delete">
+                <i class="fa fa-trash-o"></i> حذف
+            </div>
+        </div>
+        <!-- End context menu -->
+
+        <div class="wrapper">
+            <div id="budget-box">
+                <div id="total-budget-box">
+                    <p>بودجه کل: </p>
+                    <p> <span id="total-budget">...</span> تومان</p>
+                </div>
+                <div id="left-budget-box">
+                    <p>بودجه باقی‌مانده: </p>
+                    <p> <span id="left-budget">...</span> تومان</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div id="box-right">
+                    <h3>هزینه رو وارد کن</h3>
+
+                    <form action="#">
+                        <input id="expense-name" type="text" placeholder="نام هزینه">
+                        <input id="expense-amount" type="number" placeholder="مثال: ۲۰۰۰">
+
+                        <button type="submit">ثبت هزینه</button>
+                        <button type="reset">ریست</button>
+                    </form>
+                </div>
+                <div id="box-left">
+                    <p id="list-expenses">لیست هزینه ها</p>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/5e99c39435.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
